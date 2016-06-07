@@ -49,4 +49,57 @@
 			}
 		}
 	}
+	@include media('<=tablet'){
+		&-header{
+			min-height: auto;
+		}
+		&-logo{
+			float: none;
+			display: inline-block;
+			margin-top: 17px;
+			width: 70px;
+		}
+		&-event{
+			margin-right: 0;
+			float: right;
+			font-size: 14px;
+			&-name{
+				font-size: 30px;
+				line-height: 36px;
+			}
+		}
+		&-menu{
+			margin-top: 10px;
+			text-align: center;
+			margin-right: 0;
+			a{
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+	@include media('<=phone'){
+		&-menu{
+			max-height: 0;
+			overflow: hidden;
+			transition: all 0.5s linear;
+			a{
+				display: block;
+			}
+			&.opened{
+				max-height: 500px;
+			}
+		}
+	}
+}
+@include media('<=phone'){
+	.menu-opener{
+		text-align: center;
+		color: #ffffff;
+	}
+}
+@include media('>phone'){
+	.menu-opener{
+		display: none;
+	}
 }

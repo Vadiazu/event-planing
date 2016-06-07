@@ -58,3 +58,8 @@ body{
 @import "parts/message";
 @import "parts/dashboard";
 
+@include media('<=tablet'){
+	body{
+		overflow: auto;
+	}
+}

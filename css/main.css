@@ -671,6 +671,49 @@ input[type='submit'] {
     .site-menu a.active, .site-menu a:hover {
       background: #2a82b9; }
 
+@media (max-width: 768px) {
+  .site-header {
+    min-height: auto; }
+  .site-logo {
+    float: none;
+    display: inline-block;
+    margin-top: 17px;
+    width: 70px; }
+  .site-event {
+    margin-right: 0;
+    float: right;
+    font-size: 14px; }
+    .site-event-name {
+      font-size: 30px;
+      line-height: 36px; }
+  .site-menu {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 0; }
+    .site-menu a {
+      font-size: 16px;
+      line-height: 24px; } }
+
+@media (max-width: 481px) {
+  .site-menu {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s linear;
+            transition: all 0.5s linear; }
+    .site-menu a {
+      display: block; }
+    .site-menu.opened {
+      max-height: 500px; } }
+
+@media (max-width: 481px) {
+  .menu-opener {
+    text-align: center;
+    color: #ffffff; } }
+
+@media (min-width: 482px) {
+  .menu-opener {
+    display: none; } }
+
 .site-footer {
   display: table-row;
   height: 1px;
@@ -689,6 +732,16 @@ input[type='submit'] {
     font-size: 14px; }
     .footer-menu a:hover {
       text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .footer-menu {
+    text-align: center;
+    padding: 10px 0; }
+    .footer-menu li {
+      float: none;
+      display: inline; }
+      .footer-menu li a {
+        font-size: 12px; } }
 
 .message {
   background: #000;
@@ -724,6 +777,20 @@ input[type='submit'] {
   position: relative;
   top: -4px;
   margin-right: 20px; }
+
+@media (max-width: 768px) {
+  .message {
+    padding: 10px;
+    font-size: 20px; }
+    .message .separator:before {
+      height: 28px; }
+  .bell-ico {
+    top: -2px;
+    margin-right: 10px; } }
+
+@media (max-width: 600px) {
+  .message {
+    margin-top: 40px; } }
 
 .event-board {
   margin: 44px -98px 0 0; }
@@ -796,4 +863,46 @@ input[type='submit'] {
     top: 5px;
     bottom: -2px;
     width: 1px; }
+
+@media (max-width: 768px) {
+  .event-board {
+    margin-right: 0;
+    font-size: 0;
+    text-align: justify; }
+    .event-board:after {
+      display: inline-block;
+      width: 100%;
+      height: 0; }
+  .event-panel {
+    float: none;
+    display: inline-block;
+    margin-right: 0;
+    font-size: 16px;
+    width: 275px;
+    padding-left: 15px; }
+  .event-graph .ico-agenda, .event-graph .ico-event {
+    margin-left: 0; } }
+
+@media (max-width: 600px) {
+  .event-panel {
+    display: block;
+    width: auto;
+    height: auto;
+    min-height: 133px; }
+  .event-info {
+    float: none;
+    margin-left: 100px;
+    margin-top: 10px; }
+  .event-board {
+    margin-top: 20px; }
+  .event-panel {
+    margin-bottom: 20px; }
+  .event-name {
+    font-size: 22px; }
+  .event-graph .number {
+    margin-top: 8px; } }
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto; } }
 /*# sourceMappingURL=main.css.map */
