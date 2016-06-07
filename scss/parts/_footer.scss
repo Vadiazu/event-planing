@@ -1,0 +1,50 @@
+.site-footer{
+	position: absolute;
+	height: 50px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	&-menu{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		float: left;
+		li{
+			display: inline-block;
+			margin-right: 8px;
+			a{
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.content-wrapper{
+		border-top: 1px solid #eee;
+		padding-top: 20px;
+		padding-bottom: 0;
+	}
+	.copy-block{
+		float: right;
+	}
+	@include media('<=desktop'){
+		position: static;
+		height: auto;
+		&-menu{
+			float: none;
+			text-align: center;
+			margin-bottom: 10px;
+			line-height: 30px;
+		}
+		.copy-block{
+			float: none;
+			text-align: center;
+			padding-bottom: 20px;
+			line-height: 30px;
+		}
+	}
+	@include media('<=phone'){
+		font-size: 14px;
+	}
+}
