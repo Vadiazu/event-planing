@@ -17,6 +17,30 @@ $media-expressions: (
   'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
 );
 
+html, body{
+	height: 100%;
+}
+body{
+	display: table;
+	width: 100%;
+	background: url("../images/body-bg.jpg") center center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.full-height-wrapper{
+	display: table-row;
+	height: 100%;
+}
+.container-wide{
+	max-width: 1230px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.container-short{
+	max-width: 720px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
 // ligatured operators ≥ ≤
 @import 'vendors/include-media';
 @import 'vendors/normalize';
@@ -31,5 +55,6 @@ $media-expressions: (
 @import 'base/forms';
 @import "parts/header";
 @import "parts/footer";
-
+@import "parts/message";
+@import "parts/dashboard";
 

@@ -1,0 +1,88 @@
+.event{
+	&-board{
+		margin: 44px -98px 0 0;
+	}
+	&-panel{
+		width: 300px;
+		height: 152px;
+		float: left;
+		margin: 0 98px 45px 0;
+		text-decoration: none;
+		padding: 6px 10px 10px 21px;
+		&.sessions{
+			background: #ca4f30;
+			color: #e8b8ac;
+			.event-info{
+				&:before{
+					background: #e8b8ac;
+				}
+			}
+		}
+		&.agenda{
+			background: #2c1532;
+			color: #ba72cc;
+			.event-info{
+				&:before{
+					background: #ba72cc;
+				}
+			}
+		}
+		&.biography{
+			background: #815dd7;
+			color: #dbccff;
+			.event-info{
+				&:before{
+					background: #dbccff;
+				}
+			}
+		}
+		&.venues{
+			background: #ab2956;
+			color: #ff8ab3;
+			.event-info{
+				&:before{
+					background: #ff8ab3;
+				}
+			}
+		}
+	}
+	&-name{
+		font-family: $light-font;
+		font-size: 27px;
+	}
+	&-graph{
+		float: left;
+		.ico-agenda{
+			display: inline-block;
+			@include sprite($agenda);
+			margin: 10px 0 0 15px;
+		}
+		.ico-event{
+			display: inline-block;
+			@include sprite($event);
+			margin: 11px 0 0 14px;
+		}
+		.number{
+			font-size: 49px;
+			line-height: 49px;
+			margin: 10px 0 1px;
+		}
+	}
+	&-info{
+		float: right;
+		font-size: 15px;
+		color: #ffffff;
+		width: 139px;
+		margin-top: 15px;
+		line-height: 22px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			left: -26px;
+			top: 5px;
+			bottom: -2px;
+			width: 1px;
+		}
+	}
+}

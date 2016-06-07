@@ -1,50 +1,23 @@
 .site-footer{
-	position: absolute;
-	height: 50px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	&-menu{
-		list-style: none;
-		padding: 0;
-		margin: 0;
+	display: table-row;
+	height: 1px;
+	background: #000;
+	background: rgba(0,0,0,.65);
+}
+.footer-menu{
+	@extend %listreset;
+	padding: 13px 0;
+	li{
 		float: left;
-		li{
-			display: inline-block;
-			margin-right: 8px;
-			a{
-				text-decoration: none;
-				&:hover{
-					text-decoration: underline;
-				}
-			}
-		}
+		margin-right: 30px;
 	}
-	.content-wrapper{
-		border-top: 1px solid #eee;
-		padding-top: 20px;
-		padding-bottom: 0;
-	}
-	.copy-block{
-		float: right;
-	}
-	@include media('<=desktop'){
-		position: static;
-		height: auto;
-		&-menu{
-			float: none;
-			text-align: center;
-			margin-bottom: 10px;
-			line-height: 30px;
-		}
-		.copy-block{
-			float: none;
-			text-align: center;
-			padding-bottom: 20px;
-			line-height: 30px;
-		}
-	}
-	@include media('<=phone'){
+	a{
+		color: #fff;
+		text-decoration: none;
+		font-family: $light-font;
 		font-size: 14px;
+		&:hover{
+			text-decoration: underline;
+		}
 	}
 }
