@@ -51,7 +51,7 @@
 	}
 	@include media('<=tablet'){
 		&-header{
-			min-height: auto;
+			min-height: 0;
 			border-bottom: 1px solid transparent;
 		}
 		&-logo{
@@ -82,11 +82,13 @@
 	@include media('<=phone'){
 		&-menu{
 			max-height: 0;
+			opacity: 0;
 			overflow: hidden;
-			transition: all 0.5s linear;
-			margin-top: 0;
+			transition: max-height 0.3s linear, opacity 0.5s linear;
+			margin: 0;
 			a{
 				display: block;
+				margin: 0;
 				&:hover, &:active{
 					background: transparent;
 				}
@@ -96,6 +98,7 @@
 			}
 			&.opened{
 				max-height: 500px;
+				opacity: 1;
 			}
 		}
 	}
