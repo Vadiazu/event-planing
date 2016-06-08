@@ -63,3 +63,9 @@ body{
 		overflow: auto;
 	}
 }
+@include media('<=phone'){
+	body{
+		background-size: auto;
+		background-repeat: repeat;
+	}
+}

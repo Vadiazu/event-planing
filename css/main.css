@@ -905,4 +905,9 @@ input[type='submit'] {
 @media (max-width: 768px) {
   body {
     overflow: auto; } }
+
+@media (max-width: 481px) {
+  body {
+    background-size: auto;
+    background-repeat: repeat; } }
 /*# sourceMappingURL=main.css.map */
