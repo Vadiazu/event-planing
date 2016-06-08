@@ -52,6 +52,7 @@
 	@include media('<=tablet'){
 		&-header{
 			min-height: auto;
+			border-bottom: 1px solid transparent;
 		}
 		&-logo{
 			float: none;
@@ -85,10 +86,21 @@
 			transition: all 0.5s linear;
 			a{
 				display: block;
+				&:hover, &:active{
+					background: transparent;
+				}
+				&.active{
+					background: #2a82b9;
+				}
 			}
 			&.opened{
 				max-height: 500px;
 			}
+		}
+	}
+	@media (max-height: 500px){
+		&-menu{
+			padding-bottom: 10px;
 		}
 	}
 }
@@ -96,6 +108,7 @@
 	.menu-opener{
 		text-align: center;
 		color: #ffffff;
+		margin-bottom: 10px;
 	}
 }
 @include media('>phone'){

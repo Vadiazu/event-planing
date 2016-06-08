@@ -25,7 +25,7 @@ body{
 	width: 100%;
 	background: url("../images/body-bg.jpg") center center no-repeat;
 	background-size: cover;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 .full-height-wrapper{
 	display: table-row;
@@ -58,14 +58,19 @@ body{
 @import "parts/message";
 @import "parts/dashboard";
 
+@include media('<=desktop'){
+	body{
+		background-repeat: repeat;
+	}
+}
 @include media('<=tablet'){
 	body{
 		overflow: auto;
 	}
 }
+
 @include media('<=phone'){
 	body{
 		background-size: auto;
-		background-repeat: repeat;
 	}
 }

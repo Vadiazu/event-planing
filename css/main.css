@@ -6,7 +6,7 @@ body {
   width: 100%;
   background: url("../images/body-bg.jpg") center center no-repeat;
   background-size: cover;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .full-height-wrapper {
   display: table-row;
@@ -673,7 +673,8 @@ input[type='submit'] {
 
 @media (max-width: 768px) {
   .site-header {
-    min-height: auto; }
+    min-height: auto;
+    border-bottom: 1px solid transparent; }
   .site-logo {
     float: none;
     display: inline-block;
@@ -702,13 +703,22 @@ input[type='submit'] {
             transition: all 0.5s linear; }
     .site-menu a {
       display: block; }
+      .site-menu a:hover, .site-menu a:active {
+        background: transparent; }
+      .site-menu a.active {
+        background: #2a82b9; }
     .site-menu.opened {
       max-height: 500px; } }
+
+@media (max-height: 500px) {
+  .site-menu {
+    padding-bottom: 10px; } }
 
 @media (max-width: 481px) {
   .menu-opener {
     text-align: center;
-    color: #ffffff; } }
+    color: #ffffff;
+    margin-bottom: 10px; } }
 
 @media (min-width: 482px) {
   .menu-opener {
@@ -902,12 +912,15 @@ input[type='submit'] {
   .event-graph .number {
     margin-top: 8px; } }
 
+@media (max-width: 1025px) {
+  body {
+    background-repeat: repeat; } }
+
 @media (max-width: 768px) {
   body {
     overflow: auto; } }
 
 @media (max-width: 481px) {
   body {
-    background-size: auto;
-    background-repeat: repeat; } }
+    background-size: auto; } }
 /*# sourceMappingURL=main.css.map */
