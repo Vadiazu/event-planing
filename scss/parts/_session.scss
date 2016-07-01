@@ -114,4 +114,49 @@
 			top: 25px;
 		}
 	}
+	@include media('<=desktop'){
+		margin-left: 20px;
+		margin-right: 20px;
+		&:before {
+			width: 47%;
+		}
+		&-left-part {
+			width: 47%;
+		}
+		&-right-part {
+			margin-left: 47%;
+		}
+	}
+	@include media('<=desktop'){
+		margin: 30px 20px;
+		&:before {
+			display: none;
+		}
+		&-left-part,
+		&-right-part{
+			float: none;
+		}
+		&-left-part {
+			width: auto;
+			background: #fff;
+		}
+		&-right-part {
+			margin-left: 0;
+		}
+		&-banner-wrapper{
+			padding: 30px 15px;
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&-details{
+			h2{
+				margin-top: 20px;
+			}
+			p{
+				margin: 20px 0 24px 0;
+			}
+		}
+	}
 }

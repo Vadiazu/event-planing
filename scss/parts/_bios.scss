@@ -11,6 +11,9 @@
 		font-weight: normal;
 		padding: 26px 34px 30px;
 	}
+	&-body{
+		overflow: hidden;
+	}
 	&-wrapper{
 		padding: 48px 0 47px 77px;
 		margin-right: -100px;
@@ -64,6 +67,48 @@
 		}
 		&:hover{
 			opacity: 0.8;
+		}
+	}
+	@include media('<=desktop'){
+		margin-left: 20px;
+		margin-right: 20px;
+		&-wrapper{
+			padding: 30px 0 0 20px;
+			margin-right: -7%;
+		}
+		&-item{
+			margin-right: 4%;
+			width: 42%;
+		}
+	}
+	@include media('<=tablet'){
+		&-wrapper{
+			margin-right: 20px;
+		}
+		&-item{
+			margin-right: 0;
+			width: auto;
+		}
+	}
+	@include media('<=phone'){
+		margin: 20px 15px;
+		&-header{
+			font-size: 22px;
+			line-height: 24px;
+			padding: 14px 16px 14px;
+		}
+		&-wrapper{
+			padding: 10px 0 0 10px;
+		}
+		&-item{
+			margin-bottom: 20px;
+		}
+		&-image{
+			width: 100px;
+			height: 100px;
+		}
+		&-info{
+			margin-left: 120px;
 		}
 	}
 }

@@ -699,7 +699,7 @@ input[type='submit'] {
       font-size: 16px;
       line-height: 24px; } }
 
-@media (max-width: 481px) {
+@media (max-width: 500px) {
   .site-menu {
     max-height: 0;
     opacity: 0;
@@ -722,13 +722,17 @@ input[type='submit'] {
   .site-menu {
     padding-bottom: 10px; } }
 
-@media (max-width: 481px) {
+@media (max-width: 768px) and (min-width: 501px) {
+  .site-header {
+    padding-bottom: 15px; } }
+
+@media (max-width: 500px) {
   .menu-opener {
     text-align: center;
     color: #ffffff;
     margin-bottom: 10px; } }
 
-@media (min-width: 482px) {
+@media (min-width: 501px) {
   .menu-opener {
     display: none; } }
 
@@ -932,6 +936,8 @@ input[type='submit'] {
     line-height: 32px;
     font-weight: normal;
     padding: 26px 34px 30px; }
+  .bios-body {
+    overflow: hidden; }
   .bios-wrapper {
     padding: 48px 0 47px 77px;
     margin-right: -100px; }
@@ -982,6 +988,38 @@ input[type='submit'] {
       height: 22px; }
     .bios-link:hover {
       opacity: 0.8; }
+  @media (max-width: 1025px) {
+    .bios {
+      margin-left: 20px;
+      margin-right: 20px; }
+      .bios-wrapper {
+        padding: 30px 0 0 20px;
+        margin-right: -7%; }
+      .bios-item {
+        margin-right: 4%;
+        width: 42%; } }
+  @media (max-width: 768px) {
+    .bios-wrapper {
+      margin-right: 20px; }
+    .bios-item {
+      margin-right: 0;
+      width: auto; } }
+  @media (max-width: 500px) {
+    .bios {
+      margin: 20px 15px; }
+      .bios-header {
+        font-size: 22px;
+        line-height: 24px;
+        padding: 14px 16px 14px; }
+      .bios-wrapper {
+        padding: 10px 0 0 10px; }
+      .bios-item {
+        margin-bottom: 20px; }
+      .bios-image {
+        width: 100px;
+        height: 100px; }
+      .bios-info {
+        margin-left: 120px; } }
 
 .session {
   position: relative;
@@ -1084,6 +1122,37 @@ input[type='submit'] {
       height: 14px;
       right: 23px;
       top: 25px; }
+  @media (max-width: 1025px) {
+    .session {
+      margin-left: 20px;
+      margin-right: 20px; }
+      .session:before {
+        width: 47%; }
+      .session-left-part {
+        width: 47%; }
+      .session-right-part {
+        margin-left: 47%; } }
+  @media (max-width: 1025px) {
+    .session {
+      margin: 30px 20px; }
+      .session:before {
+        display: none; }
+      .session-left-part, .session-right-part {
+        float: none; }
+      .session-left-part {
+        width: auto;
+        background: #fff; }
+      .session-right-part {
+        margin-left: 0; }
+      .session-banner-wrapper {
+        padding: 30px 15px; }
+        .session-banner-wrapper img {
+          display: block;
+          margin: 0 auto; }
+      .session-details h2 {
+        margin-top: 20px; }
+      .session-details p {
+        margin: 20px 0 24px 0; } }
 
 .venues-page {
   position: relative;
@@ -2527,7 +2596,7 @@ yx-axis
   body {
     overflow: auto; } }
 
-@media (max-width: 481px) {
+@media (max-width: 500px) {
   body {
     background-size: auto; } }
 /*# sourceMappingURL=main.css.map */
