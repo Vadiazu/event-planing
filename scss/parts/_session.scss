@@ -1,8 +1,8 @@
-.session{
+.session {
 	position: relative;
 	background: #ca4f30;
 	margin: 68px 0;
-	&:before{
+	&:before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -12,68 +12,106 @@
 		background: #ffffff;
 		z-index: 0;
 	}
-	&-left-part{
+	&-left-part {
 		float: left;
 		width: 434px;
 		position: relative;
 		z-index: 1;
 	}
-	&-right-part{
+	&-right-part {
 		margin-left: 434px;
 	}
-	&-banner-wrapper{
+	&-banner-wrapper {
 		padding: 93px 19px;
 	}
-	&-details{
+	&-details {
 		padding: 20px 33px 23px;
-		h1{
+		h1 {
 			color: #ca4f30;
 			font-family: $light-font;
 			font-size: 27px;
 			line-height: 32px;
 		}
-		h2{
+		h2 {
 			margin: 39px 0 2px;
 			font-size: 22px;
 			line-height: 32px;
 			font-weight: normal;
 		}
-		&-time{
+		&-time {
 			margin-top: 17px;
 			color: #ca4f30;
 		}
-		p{
+		p {
 			line-height: 22px;
 			margin: 20px 85px 56px 0;
 		}
-		&-item{
+		&-item {
 			position: relative;
-          &:after{
-            content: '';
-            position: absolute;
-            height: 1px;
-            left: 36px;
-            bottom: 12px;
-            right: 122px;
-            background: #ca4f30;
-          }
+			&:after {
+				content: '';
+				position: absolute;
+				height: 1px;
+				left: 36px;
+				bottom: 12px;
+				right: 122px;
+				background: #ca4f30;
+			}
 		}
 	}
-    &-presentation{
-      color: #e8b8ac;
-      font-size: 27px;
-      line-height: 30px;
-      font-weight: normal;
-      font-family: $light-font;
-      &-th{
-        color: #ffffff;
-        background: #3c3e40;
-      }
-      &-td{
-        position: relative;
-      }
-      .icon-presentation{
-        @include sprite($presentation);
-      }
-    }
+	&-presentation {
+		font-family: $light-font;
+		h2{
+			color: #e8b8ac;
+			font-size: 27px;
+			line-height: 30px;
+			font-weight: normal;
+			font-family: $light-font;
+			padding:21px 15px 28px;
+		}
+		&-table{
+			max-width: 412px;
+			margin: 0 auto;
+			position: relative;
+			right: -2px;
+		}
+		&-th {
+			color: #ffffff;
+			background: #3c3e40;
+			font-size: 30px;
+			line-height: 36px;
+			padding: 3px 15px 7px;
+		}
+		&-td {
+			position: relative;
+			background: #fff;
+			padding: 0 45px 7px 85px;
+			border-top: 1px solid #d6dfe6;
+			&:last-child{
+				padding-bottom: 18px;
+			}
+		}
+		&-name{
+			color: #0c7787;
+			font-size: 23px;
+			margin-top: 6px;
+		}
+		&-updated{
+			color: #717171;
+			font-size: 13px;
+			margin-top: -2px;
+		}
+		.icon-presentation {
+			position: absolute;
+			@include sprite($presentation);
+			top: 8px;
+			left: 17px;
+		}
+		.icon-download{
+			position: absolute;
+			@include sprite($download);
+			right: 23px;
+			top: 25px;
+		}
+	}
 }

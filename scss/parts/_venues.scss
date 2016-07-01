@@ -1,0 +1,46 @@
+.venues {
+	&-page{
+		position: relative;
+		background: #ab2956;
+		margin: 0 0 29px;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 341px;
+			background: #ffffff;
+			z-index: 0;
+		}
+		.icon-keynote{
+			@include sprite($venue);
+			margin: 0 auto 27px;
+			position: relative;
+			left: 3px;
+		}
+	}
+	&-left-part {
+		float: left;
+		width: 341px;
+		position: relative;
+		z-index: 1;
+		padding: 27px 34px 20px;
+		h2{
+			font-size: 27px;
+			line-height: 32px;
+			font-weight: normal;
+			color: #ab2956;
+			margin-bottom: 10px;
+		}
+	}
+	&-right-part {
+		margin-left: 341px;
+	}
+	&-map{
+		padding: 16px 14px 19px 19px;
+		img{
+			display: block;
+		}
+	}
+}

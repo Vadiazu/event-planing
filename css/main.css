@@ -787,7 +787,7 @@ input[type='submit'] {
 
 .bell-ico {
   background-image: url(../images/sprite.png);
-  background-position: 0px -69px;
+  background-position: -48px -69px;
   width: 26px;
   height: 28px;
   display: inline-block;
@@ -850,7 +850,7 @@ input[type='submit'] {
   .event-graph .ico-agenda {
     display: inline-block;
     background-image: url(../images/sprite.png);
-    background-position: -53px 0px;
+    background-position: -106px 0px;
     width: 49px;
     height: 64px;
     margin: 10px 0 0 15px; }
@@ -962,7 +962,7 @@ input[type='submit'] {
     display: inline-block; }
     .bios-link.linkedin {
       background-image: url(../images/sprite.png);
-      background-position: 0px -97px;
+      background-position: 0px -117px;
       width: 23px;
       height: 23px;
       position: relative;
@@ -977,7 +977,7 @@ input[type='submit'] {
         width: 1px; }
     .bios-link.twitter {
       background-image: url(../images/sprite.png);
-      background-position: -26px -69px;
+      background-position: -74px -69px;
       width: 27px;
       height: 22px; }
     .bios-link:hover {
@@ -1034,21 +1034,99 @@ input[type='submit'] {
         right: 122px;
         background: #ca4f30; }
   .session-presentation {
-    color: #e8b8ac;
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: normal;
     font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI"; }
+    .session-presentation h2 {
+      color: #e8b8ac;
+      font-size: 27px;
+      line-height: 30px;
+      font-weight: normal;
+      font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+      padding: 21px 15px 28px; }
+    .session-presentation-table {
+      max-width: 412px;
+      margin: 0 auto;
+      position: relative;
+      right: -2px; }
     .session-presentation-th {
       color: #ffffff;
-      background: #3c3e40; }
+      background: #3c3e40;
+      font-size: 30px;
+      line-height: 36px;
+      padding: 3px 15px 7px; }
     .session-presentation-td {
-      position: relative; }
+      position: relative;
+      background: #fff;
+      padding: 0 45px 7px 85px;
+      border-top: 1px solid #d6dfe6; }
+      .session-presentation-td:last-child {
+        padding-bottom: 18px; }
+    .session-presentation-name {
+      color: #0c7787;
+      font-size: 23px;
+      margin-top: 6px; }
+    .session-presentation-updated {
+      color: #717171;
+      font-size: 13px;
+      margin-top: -2px; }
     .session-presentation .icon-presentation {
+      position: absolute;
       background-image: url(../images/sprite.png);
-      background-position: -102px 0px;
+      background-position: 0px -69px;
       width: 48px;
-      height: 48px; }
+      height: 48px;
+      top: 8px;
+      left: 17px; }
+    .session-presentation .icon-download {
+      position: absolute;
+      background-image: url(../images/sprite.png);
+      background-position: -101px -69px;
+      width: 16px;
+      height: 14px;
+      right: 23px;
+      top: 25px; }
+
+.venues-page {
+  position: relative;
+  background: #ab2956;
+  margin: 0 0 29px; }
+  .venues-page:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 341px;
+    background: #ffffff;
+    z-index: 0; }
+  .venues-page .icon-keynote {
+    background-image: url(../images/sprite.png);
+    background-position: -53px 0px;
+    width: 53px;
+    height: 69px;
+    margin: 0 auto 27px;
+    position: relative;
+    left: 3px; }
+
+.venues-left-part {
+  float: left;
+  width: 341px;
+  position: relative;
+  z-index: 1;
+  padding: 27px 34px 20px; }
+  .venues-left-part h2 {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: normal;
+    color: #ab2956;
+    margin-bottom: 10px; }
+
+.venues-right-part {
+  margin-left: 341px; }
+
+.venues-map {
+  padding: 16px 14px 19px 19px; }
+  .venues-map img {
+    display: block; }
 
 .tabset {
   list-style: none;
@@ -1067,11 +1145,20 @@ input[type='submit'] {
       padding: 2px 22px 8px;
       line-height: 20px; }
   .tabset-session a {
-    background: #ca4f30; }
+    background: #a84228; }
+    .tabset-session a.active, .tabset-session a:hover {
+      background: #ca4f30; }
+  .tabset-venues li {
+    margin-right: 15px; }
+  .tabset-venues a {
+    background: #781d3d; }
+    .tabset-venues a.active, .tabset-venues a:hover {
+      background: #ab2956; }
 
 .tab-content {
   margin-top: 12px; }
-  .tab-content .session {
+  .tab-content .session,
+  .tab-content .venues {
     margin-top: 0; }
   .tab-content .session-details {
     padding-top: 2px;
