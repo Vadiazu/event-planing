@@ -48,6 +48,32 @@
 		}
 		&-item{
 			position: relative;
+          &:after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            left: 36px;
+            bottom: 12px;
+            right: 122px;
+            background: #ca4f30;
+          }
 		}
 	}
+    &-presentation{
+      color: #e8b8ac;
+      font-size: 27px;
+      line-height: 30px;
+      font-weight: normal;
+      font-family: $light-font;
+      &-th{
+        color: #ffffff;
+        background: #3c3e40;
+      }
+      &-td{
+        position: relative;
+      }
+      .icon-presentation{
+        @include sprite($presentation);
+      }
+    }
 }

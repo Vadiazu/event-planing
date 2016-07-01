@@ -30,5 +30,17 @@
 	}
 	.session-details{
 		padding-top: 2px;
+        padding-bottom: 12px;
+      h1{
+        margin-bottom: 5px;
+        a{
+          color: #ca4f30;
+          text-decoration: none;
+        }
+      }
+      p{
+        margin-right: 50px;
+        margin-bottom: 21px;
+      }
 	}
 }
