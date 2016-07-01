@@ -1,0 +1,69 @@
+.bios{
+	background: #ffffff;
+	margin: 59px 0;
+	&-header{
+		margin: 0;
+		background: #815dd7;
+		color: #dbccff;
+		font-family: $light-font;
+		font-size: 27px;
+		line-height: 32px;
+		font-weight: normal;
+		padding: 26px 34px 30px;
+	}
+	&-wrapper{
+		padding: 48px 0 47px 77px;
+		margin-right: -100px;
+	}
+	&-item{
+		width: 365px;
+		float: left;
+		margin: 0 84px 55px 0;
+	}
+	&-image{
+		float: left;
+		width: 139px;
+		height: 139px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin-top: 5px;
+	}
+	&-info{
+		margin-left: 160px;
+		font-family: $light-font;
+		p{
+			font-size: 13px;
+			line-height: 16px;
+			color: #666666;
+		}
+	}
+	&-name{
+		font-size: 19px;
+		line-height: 22px;
+		color: #815dd7;
+		margin-bottom: 8px;
+	}
+	&-link{
+		display: inline-block;
+		&.linkedin{
+			@include sprite($linkedin);
+			position: relative;
+			margin: 0 15px 0 2px;
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: -11px;
+				background: #929292;
+				width: 1px;
+			}
+		}
+		&.twitter{
+			@include sprite($twitter);
+		}
+		&:hover{
+			opacity: 0.8;
+		}
+	}
+}

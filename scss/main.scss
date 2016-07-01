@@ -23,7 +23,7 @@ html, body{
 body{
 	display: table;
 	width: 100%;
-	background: url("../images/body-bg.jpg") center center no-repeat;
+	background: #341b37 url("../images/body-bg.jpg") center center no-repeat;
 	background-size: cover;
 	overflow-x: hidden;
 }
@@ -39,6 +39,11 @@ body{
 .container-short{
 	max-width: 720px;
 	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.container{
+	max-width: 967px;
 	margin: 0 auto;
 }
 
@@ -58,6 +63,22 @@ body{
 @import "parts/footer";
 @import "parts/message";
 @import "parts/dashboard";
+@import "parts/bios";
+@import "parts/session";
+@import "parts/tabs";
+@import "parts/scrollbar";
+
+.js-tab-hidden {
+	display:block !important;
+	left:-9999px !important;
+	position: absolute !important;
+	top:-9999px !important;
+}
+
+.custom-scroll{
+	max-height: 562px;
+	margin: 17px 7px 17px 0;
+}
 
 @include media('<=desktop'){
 	body{

@@ -1,0 +1,34 @@
+.tabset{
+	list-style: none;
+	margin: 46px 0 0 0;
+	padding: 0;
+	li{
+		display: inline-block;
+		margin-right: 23px;
+		a{
+			font-family: $light-font;
+			font-size: 19px;
+			color: #ffffff;
+			text-decoration: none;
+			display: block;
+			border-radius: 3px;
+			padding: 2px 22px 8px;
+			line-height: 20px;
+		}
+	}
+	&-session{
+		a{
+			background: #ca4f30;
+		}
+	}
+}
+
+.tab-content{
+	margin-top: 12px;
+	.session{
+		margin-top: 0;
+	}
+	.session-details{
+		padding-top: 2px;
+	}
+}

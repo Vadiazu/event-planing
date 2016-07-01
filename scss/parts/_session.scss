@@ -1,0 +1,53 @@
+.session{
+	position: relative;
+	background: #ca4f30;
+	margin: 68px 0;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 434px;
+		background: #ffffff;
+		z-index: 0;
+	}
+	&-left-part{
+		float: left;
+		width: 434px;
+		position: relative;
+		z-index: 1;
+	}
+	&-right-part{
+		margin-left: 434px;
+	}
+	&-banner-wrapper{
+		padding: 93px 19px;
+	}
+	&-details{
+		padding: 20px 33px 23px;
+		h1{
+			color: #ca4f30;
+			font-family: $light-font;
+			font-size: 27px;
+			line-height: 32px;
+		}
+		h2{
+			margin: 39px 0 2px;
+			font-size: 22px;
+			line-height: 32px;
+			font-weight: normal;
+		}
+		&-time{
+			margin-top: 17px;
+			color: #ca4f30;
+		}
+		p{
+			line-height: 22px;
+			margin: 20px 85px 56px 0;
+		}
+		&-item{
+			position: relative;
+		}
+	}
+}
