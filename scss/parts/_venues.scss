@@ -43,4 +43,19 @@
 			display: block;
 		}
 	}
+  @include media('<=desktop'){
+    &-page{
+      margin: 10px 20px 30px;
+      &:before{
+        width: 250px;
+      }
+    }
+    &-left-part {
+      float: left;
+      width: 250px;
+    }
+    &-right-part{
+      margin-left: 250px;
+    }
+  }
 }

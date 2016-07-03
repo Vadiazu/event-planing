@@ -1132,7 +1132,7 @@ input[type='submit'] {
         width: 47%; }
       .session-right-part {
         margin-left: 47%; } }
-  @media (max-width: 1025px) {
+  @media (max-width: 768px) {
     .session {
       margin: 30px 20px; }
       .session:before {
@@ -1141,7 +1141,9 @@ input[type='submit'] {
         float: none; }
       .session-left-part {
         width: auto;
-        background: #fff; }
+        background: #fff;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent; }
       .session-right-part {
         margin-left: 0; }
       .session-banner-wrapper {
@@ -1149,10 +1151,23 @@ input[type='submit'] {
         .session-banner-wrapper img {
           display: block;
           margin: 0 auto; }
-      .session-details h2 {
-        margin-top: 20px; }
-      .session-details p {
-        margin: 20px 0 24px 0; } }
+      .session-details {
+        padding-right: 0;
+        padding-left: 15px; }
+        .session-details h2 {
+          margin-top: 20px; }
+        .session-details p {
+          margin: 20px 0 24px 0; }
+        .session-details-item:after {
+          left: 15px;
+          right: 10px; }
+      .session-presentation h2 {
+        margin-bottom: 0;
+        padding: 15px 15px; }
+      .session-presentation-table {
+        max-width: none;
+        right: 0;
+        margin: 0 15px 15px; } }
 
 .venues-page {
   position: relative;
@@ -1197,6 +1212,17 @@ input[type='submit'] {
   .venues-map img {
     display: block; }
 
+@media (max-width: 1025px) {
+  .venues-page {
+    margin: 10px 20px 30px; }
+    .venues-page:before {
+      width: 250px; }
+  .venues-left-part {
+    float: left;
+    width: 250px; }
+  .venues-right-part {
+    margin-left: 250px; } }
+
 .tabset {
   list-style: none;
   margin: 46px 0 0 0;
@@ -1223,6 +1249,21 @@ input[type='submit'] {
     background: #781d3d; }
     .tabset-venues a.active, .tabset-venues a:hover {
       background: #ab2956; }
+  @media (max-width: 1025px) {
+    .tabset {
+      margin: 30px 20px 0; } }
+  @media (max-width: 650px) {
+    .tabset {
+      margin-top: 0;
+      display: none; }
+      .tabset li {
+        margin: 0;
+        display: block; }
+        .tabset li a {
+          border-radius: 0; } }
+  @media (min-width: 651px) {
+    .tabset {
+      display: block !important; } }
 
 .tab-content {
   margin-top: 12px; }
@@ -1240,6 +1281,33 @@ input[type='submit'] {
     .tab-content .session-details p {
       margin-right: 50px;
       margin-bottom: 21px; }
+      @media (max-width: 768px) {
+        .tab-content .session-details p {
+          margin-right: 0; } }
+
+.open-tabset {
+  color: #ffffff;
+  font-size: 19px;
+  left: 20px; }
+  .open-tabset .tabset-name {
+    margin: 30px 20px 0;
+    position: relative;
+    padding: 2px 0 8px 22px; }
+    .open-tabset .tabset-name:after {
+      content: '>';
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+    @media (min-width: 651px) {
+      .open-tabset .tabset-name {
+        display: none; } }
+  .open-tabset.tabset-venues .tabset-name {
+    background: #781d3d; }
+  .open-tabset.tabset-session .tabset-name {
+    background: #a84228; }
 
 /*
 == malihu jquery custom scrollbar plugin ==

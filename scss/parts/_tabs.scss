@@ -37,6 +37,23 @@
 			}
 		}
 	}
+    @include media('<=desktop'){
+      margin: 30px 20px 0;
+    }
+    @include media('<=650px'){
+      margin-top: 0;
+      display: none;
+      li{
+        margin: 0;
+        display: block;
+        a{
+          border-radius: 0;
+        }
+      }
+    }
+    @include media('>650px'){
+      display: block!important;
+    }
 }
 
 .tab-content {
@@ -58,6 +75,41 @@
 		p {
 			margin-right: 50px;
 			margin-bottom: 21px;
+            @include media('<=tablet'){
+              margin-right: 0;
+            }
 		}
 	}
+}
+
+.open-tabset{
+  color: #ffffff;
+  font-size: 19px;
+  left: 20px;
+  .tabset-name{
+    margin: 30px 20px 0;
+    position: relative;
+    padding: 2px 0 8px 22px;
+    &:after{
+      content: '>';
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    @include media('>650px'){
+      display: none;
+    }
+  }
+  &.tabset-venues{
+    .tabset-name{
+      background: #781d3d;
+    }
+  }
+  &.tabset-session{
+    .tabset-name{
+      background: #a84228;
+    }
+  }
 }

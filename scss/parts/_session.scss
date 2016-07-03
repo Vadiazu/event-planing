@@ -127,7 +127,7 @@
 			margin-left: 47%;
 		}
 	}
-	@include media('<=desktop'){
+	@include media('<=tablet'){
 		margin: 30px 20px;
 		&:before {
 			display: none;
@@ -139,6 +139,8 @@
 		&-left-part {
 			width: auto;
 			background: #fff;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
 		}
 		&-right-part {
 			margin-left: 0;
@@ -151,12 +153,31 @@
 			}
 		}
 		&-details{
+            padding-right: 0;
+            padding-left: 15px;
 			h2{
 				margin-top: 20px;
 			}
 			p{
 				margin: 20px 0 24px 0;
 			}
+            &-item{
+              &:after{
+                left: 15px;
+                right: 10px;
+              }
+            }
 		}
+        &-presentation{
+            h2{
+              margin-bottom: 0;
+              padding: 15px 15px;
+            }
+            &-table{
+              max-width: none;
+              right: 0;
+              margin: 0 15px 15px;
+            }
+        }
 	}
 }
