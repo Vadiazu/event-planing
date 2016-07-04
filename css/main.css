@@ -501,7 +501,7 @@ html {
 
 body {
   color: #333;
-  font: 15px/1.466 "Helvetica Neue", "Segoe UI", "Arial", "Lucida Grande", sans-serif;
+  font: 15px/1.466 "Helvetica Neue", "HelveticaNeue", "Segoe UI", "Arial", "Lucida Grande", sans-serif;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -661,7 +661,7 @@ input[type='submit'] {
   margin: 31px 170px 0 0; }
   .site-menu a {
     color: #fff;
-    font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+    font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
     font-size: 19px;
     display: inline-block;
     border-radius: 5px;
@@ -750,7 +750,7 @@ input[type='submit'] {
   .footer-menu a {
     color: #fff;
     text-decoration: none;
-    font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+    font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
     font-size: 14px; }
     .footer-menu a:hover {
       text-decoration: underline; }
@@ -768,7 +768,7 @@ input[type='submit'] {
 .message {
   background: #000;
   background: rgba(0, 0, 0, 0.65);
-  font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+  font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
   font-size: 25px;
   color: #ffffff;
   text-align: center;
@@ -846,7 +846,7 @@ input[type='submit'] {
       background: #ff8ab3; }
 
 .event-name {
-  font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+  font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
   font-size: 27px; }
 
 .event-graph {
@@ -931,7 +931,7 @@ input[type='submit'] {
     margin: 0;
     background: #815dd7;
     color: #dbccff;
-    font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+    font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
     font-size: 27px;
     line-height: 32px;
     font-weight: normal;
@@ -954,7 +954,7 @@ input[type='submit'] {
     margin-top: 5px; }
   .bios-info {
     margin-left: 160px;
-    font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI"; }
+    font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI"; }
     .bios-info p {
       font-size: 13px;
       line-height: 16px;
@@ -1047,9 +1047,10 @@ input[type='submit'] {
     padding: 20px 33px 23px; }
     .session-details h1 {
       color: #ca4f30;
-      font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+      font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
       font-size: 27px;
-      line-height: 32px; }
+      line-height: 32px;
+      font-weight: normal; }
     .session-details h2 {
       margin: 39px 0 2px;
       font-size: 22px;
@@ -1072,13 +1073,13 @@ input[type='submit'] {
         right: 122px;
         background: #ca4f30; }
   .session-presentation {
-    font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI"; }
+    font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI"; }
     .session-presentation h2 {
       color: #e8b8ac;
       font-size: 27px;
       line-height: 30px;
       font-weight: normal;
-      font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+      font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
       padding: 21px 15px 28px; }
     .session-presentation-table {
       max-width: 412px;
@@ -1241,14 +1242,15 @@ input[type='submit'] {
     display: inline-block;
     margin-right: 23px; }
     .tabset li a {
-      font-family: "Helvetica Neue Light", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
+      font-family: "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "Segoe UI Light", "Segoe UI";
       font-size: 19px;
       color: #ffffff;
       text-decoration: none;
       display: block;
       border-radius: 3px;
       padding: 3px 22px 7px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-transform: capitalize; }
   .tabset-session a {
     background: #a84228; }
     .tabset-session a.active, .tabset-session a:hover {
