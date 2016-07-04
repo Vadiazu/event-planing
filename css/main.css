@@ -1152,7 +1152,7 @@ input[type='submit'] {
           display: block;
           margin: 0 auto; }
       .session-details {
-        padding-right: 0;
+        padding-right: 15px;
         padding-left: 15px; }
         .session-details h2 {
           margin-top: 20px; }
@@ -1223,6 +1223,16 @@ input[type='submit'] {
   .venues-right-part {
     margin-left: 250px; } }
 
+@media (max-width: 768px) {
+  .venues-page:before {
+    display: none; }
+  .venues-left-part, .venues-right-part {
+    float: none;
+    width: auto;
+    margin-left: 0; }
+  .venues-left-part {
+    background: #ffffff; } }
+
 .tabset {
   list-style: none;
   margin: 46px 0 0 0;
@@ -1237,7 +1247,7 @@ input[type='submit'] {
       text-decoration: none;
       display: block;
       border-radius: 3px;
-      padding: 2px 22px 8px;
+      padding: 3px 22px 7px;
       line-height: 20px; }
   .tabset-session a {
     background: #a84228; }
@@ -1292,7 +1302,7 @@ input[type='submit'] {
   .open-tabset .tabset-name {
     margin: 30px 20px 0;
     position: relative;
-    padding: 2px 0 8px 22px; }
+    padding: 4px 0 6px 22px; }
     .open-tabset .tabset-name:after {
       content: '>';
       position: absolute;
@@ -2666,5 +2676,16 @@ yx-axis
 
 @media (max-width: 500px) {
   body {
-    background-size: auto; } }
+    background-size: auto;
+    display: block;
+    width: auto; }
+  .full-height-wrapper {
+    display: block;
+    height: auto;
+    width: 100%; }
+  html, body {
+    height: auto; }
+  .site-footer {
+    display: block;
+    height: auto; } }
 /*# sourceMappingURL=main.css.map */

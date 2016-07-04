@@ -95,5 +95,19 @@ body{
 @include media('<=phone'){
 	body{
 		background-size: auto;
+		display: block;
+		width: auto;
+	}
+	.full-height-wrapper{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+	html, body{
+		height: auto;
+	}
+	.site-footer{
+		display: block;
+		height: auto;
 	}
 }
