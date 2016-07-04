@@ -12,8 +12,9 @@
 			text-decoration: none;
 			display: block;
 			border-radius: 3px;
-			padding: 2px 22px 8px;
+			padding: 3px 22px 7px;
 			line-height: 20px;
+            text-transform: capitalize;
 		}
 	}
 	&-session {
@@ -89,7 +90,7 @@
   .tabset-name{
     margin: 30px 20px 0;
     position: relative;
-    padding: 2px 0 8px 22px;
+    padding: 3px 0 7px 22px;
     &:after{
       content: '>';
       position: absolute;

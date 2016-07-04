@@ -58,4 +58,20 @@
       margin-left: 250px;
     }
   }
+  @include media('<=tablet'){
+    &-page{
+      &:before{
+        display: none;
+      }
+    }
+    &-left-part,
+    &-right-part{
+      float: none;
+      width: auto;
+      margin-left: 0;
+    }
+    &-left-part{
+      background: #fff;
+    }
+  }
 }
